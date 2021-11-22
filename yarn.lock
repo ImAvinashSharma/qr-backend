@@ -2447,10 +2447,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prop-types@npm:*":
+  version: 15.7.4
+  resolution: "@types/prop-types@npm:15.7.4"
+  checksum: ef15c425a944f6b13824a87854cccf238e1b4cd0350b3124f4938406fe758fbdd6fadb2480d1388a00daeab61ce9888be5ca2b73da275f5dbc977143ff98e1eb
+  languageName: node
+  linkType: hard
+
 "@types/q@npm:^1.5.1":
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
   checksum: 1a19cf2c41648b862bd25a4c26ba33dc7206f14fcf50c5b78031b59090d21176e703cd10aff8af409eafbefcebb288607d30af765ee3859637cf3fae6e875648
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^16.9.35":
+  version: 16.14.21
+  resolution: "@types/react@npm:16.14.21"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 40134f89bb7ad550a354b531e106ead9ef5c72a2a993ea9d35ddc13a62eedd664a4612e0fbe175d308abd83b20d24cd0ab608da918821f41095bbb239d3b9e30
   languageName: node
   linkType: hard
 
@@ -2460,6 +2478,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: f54f13e4b6ac46a6c7bde9e609cd730f4369b434aa59c5230478b9262bb75e7349c3247fd2cdb917e98d053a57f5609dd552379c612a720b59a8714914d324ed
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:*":
+  version: 0.16.2
+  resolution: "@types/scheduler@npm:0.16.2"
+  checksum: e78d1bb50ca9321a76826c0f5a5ed7f1b6e995597127993cad658bd18d7f7de4324cd7efdfd0140079ee212a05774bbbd95eecfdf72370d14023acb99b841a30
   languageName: node
   linkType: hard
 
@@ -2894,6 +2919,26 @@ __metadata:
   version: 4.2.2
   resolution: "@xtuc/long@npm:4.2.2"
   checksum: ec09a359f98e9f8c47bf6c965e73b520a1a65e93f1febf6472babc8b6b0b425a2084452be103da5be11aec8c502ecfa29400713d55ef774579d04f691db44a2d
+  languageName: node
+  linkType: hard
+
+"@zxing/library@npm:^0.17.0":
+  version: 0.17.1
+  resolution: "@zxing/library@npm:0.17.1"
+  dependencies:
+    "@zxing/text-encoding": ~0.9.0
+    ts-custom-error: ^3.0.0
+  dependenciesMeta:
+    "@zxing/text-encoding":
+      optional: true
+  checksum: 807b27a189b61439dfc601be0632d0b3dda1784765d7fedf70e396996eace80579a16e15ad78f7f6e943683e1f5b63d0eb063e77a0dd35d9181d87a2d90af745
+  languageName: node
+  linkType: hard
+
+"@zxing/text-encoding@npm:~0.9.0":
+  version: 0.9.0
+  resolution: "@zxing/text-encoding@npm:0.9.0"
+  checksum: c0f32e38c97363c73385db84dba7c645da843348b14615c65781742a393118e86abced6b824ac2351f59f31066714b2155083557afa8bd07f0180a50edf0a7d8
   languageName: node
   linkType: hard
 
@@ -3464,6 +3509,15 @@ __metadata:
   version: 4.1.2
   resolution: "axe-core@npm:4.1.2"
   checksum: b46e47d68fa060ef4208987646added728c751dcefc04231a00eac72709cdffda1a4683d1de5fcbe269d5a8b392b1a23ef7dcb1778f1a502a6820830c4a75771
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.24.0":
+  version: 0.24.0
+  resolution: "axios@npm:0.24.0"
+  dependencies:
+    follow-redirects: ^1.14.4
+  checksum: e741dfea07def55be7b1082824d71f54f7859b9c3c75a86c6a74b91c6e48bb461aceac683f77867313f89ff40ef5f2d1d2a1fe1953fcb71bdc1c1fc0fc069925
   languageName: node
   linkType: hard
 
@@ -5204,6 +5258,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^3.0.2":
+  version: 3.0.10
+  resolution: "csstype@npm:3.0.10"
+  checksum: edc3b0a5e8eb99e2656d87f414fa8bf0dd43621325f5dae7515bf98a516eaba7ddec45be5d5aba8afa9ce7f723bcfed39bf98d38d94609f8a2669cbdcca09172
+  languageName: node
+  linkType: hard
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -6793,6 +6854,16 @@ __metadata:
     debug:
       optional: true
   checksum: 76a23a75e5eedb872fc223fcce5b267fd315b123e0fc38f8d7701283445418d9ead72c7ff8a468d95042526a34e5677bfe76b85f973aa0563890c695c975c451
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.4":
+  version: 1.14.5
+  resolution: "follow-redirects@npm:1.14.5"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 69c5dc6658d9a5ac337b82e2b4ab4af5ed4b0482b582b9517dc10fa132f781187febe4d28e1808866c299b1ca0083c1493e781364746376e89a24e15b4887a0c
   languageName: node
   linkType: hard
 
@@ -9141,13 +9212,6 @@ fsevents@^1.2.7:
     json-schema: 0.2.3
     verror: 1.10.0
   checksum: ee0177b7ef39e6becf18c586d31fabe15d62be88e7867d3aff86466e4a3de9a2cd47b6e597417aebc1cd3c2d43bc662e79ab5eecdadf3ce0643e909432ed6d2c
-  languageName: node
-  linkType: hard
-
-"jsqr@npm:^1.2.0":
-  version: 1.4.0
-  resolution: "jsqr@npm:1.4.0"
-  checksum: 9751c59bd45a29643cc9586b5d013f35b96cef28b7d2f6d937b74e6cd1747e1afa27a8dcdc63495b4f1ca3efde2e2a3331a0ed71442cf4e734ba54e76aafe631
   languageName: node
   linkType: hard
 
@@ -11994,10 +12058,11 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
+    axios: ^0.24.0
     eslint-config-react-app: ^6.0.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-qr-reader: ^2.2.1
+    react-qr-barcode-scanner: ^1.0.6
     react-scripts: 4.0.3
     web-vitals: ^1.0.1
   languageName: unknown
@@ -12189,17 +12254,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-qr-reader@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "react-qr-reader@npm:2.2.1"
+"react-qr-barcode-scanner@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "react-qr-barcode-scanner@npm:1.0.6"
   dependencies:
-    jsqr: ^1.2.0
-    prop-types: ^15.7.2
-    webrtc-adapter: ^7.2.1
+    "@types/react": ^16.9.35
+    "@zxing/library": ^0.17.0
+    react-webcam: ^5.0.1
   peerDependencies:
-    react: ~16
-    react-dom: ~16
-  checksum: c16fc3e2ebd42738f3d5630562235142019fe79d9ba7c82df600a8982d89d0405b3609770a3d802efc6786baca410e6d715b1e13d9bc392ce35b61c7d0268b9c
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  checksum: d811b2014bb248f377d0d7b93990823c00560f3307af8b0a01f2824ed16702f0fc598bad552625c2f06a05f51c92eec003877d64c4e573a8404df47ff78a5386
   languageName: node
   linkType: hard
 
@@ -12285,6 +12350,16 @@ fsevents@^1.2.7:
   bin:
     react-scripts: ./bin/react-scripts.js
   checksum: ee13d6fa1eef6c8ad0b5e4e5c26bdf59b136dfa24910e9ebb2d9f42a8fe7e77ed7ce221b87342e4f597954c42293d6d181ff1315d3b2bd3103362eb192a71d22
+  languageName: node
+  linkType: hard
+
+"react-webcam@npm:^5.0.1":
+  version: 5.2.4
+  resolution: "react-webcam@npm:5.2.4"
+  peerDependencies:
+    react: ">=15.3.0"
+    react-dom: ">=15.3.0"
+  checksum: 2ec859c2a779e78cfbde1a845f38a1265dcb04c635f059c73508d8e2565c87b077b8e60a996c863f122548f9bb72a30135b073606f70e1bd4dfe6436bf9ed0fa
   languageName: node
   linkType: hard
 
@@ -12878,15 +12953,6 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"rtcpeerconnection-shim@npm:^1.2.15":
-  version: 1.2.15
-  resolution: "rtcpeerconnection-shim@npm:1.2.15"
-  dependencies:
-    sdp: ^2.6.0
-  checksum: 45eeb1b3d5e4aff0309ec6e3c32fc3c83d4d5e511713cbd1bb317de022a27c73e0597fe893c31f8f10f092d90c64d52cf575f1a869850a859bbef155998f5552
-  languageName: node
-  linkType: hard
-
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -13042,13 +13108,6 @@ resolve@1.18.1:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: a084f593f222560c412a4d8f40c92386c01c1c709f27c0672c2f02927a4d4d475f57f8b8e91198d0defb452add160476a03f07a05b26200a64b5124fa874e158
-  languageName: node
-  linkType: hard
-
-"sdp@npm:^2.12.0, sdp@npm:^2.6.0":
-  version: 2.12.0
-  resolution: "sdp@npm:2.12.0"
-  checksum: 674e4342b211edb9f98cd17dcaa2aa2a71e7c1f9854b801499dabe3bf849194d10d242a8abe28a2291a6516a68973d46199105ef703372c5cd9844995626517f
   languageName: node
   linkType: hard
 
@@ -14339,6 +14398,13 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"ts-custom-error@npm:^3.0.0":
+  version: 3.2.0
+  resolution: "ts-custom-error@npm:3.2.0"
+  checksum: 0e865d875cc5095aad9a165950b693d48e9a7921a1a5c1575096797a29447c4f0cb24c9d1cbb0aec7ed1d27bcbdc9a6d4acffd71050dc8b45deb31b960a10126
+  languageName: node
+  linkType: hard
+
 "ts-pnp@npm:1.2.0, ts-pnp@npm:^1.1.6":
   version: 1.2.0
   resolution: "ts-pnp@npm:1.2.0"
@@ -15045,16 +15111,6 @@ resolve@1.18.1:
   bin:
     webpack: bin/webpack.js
   checksum: cb4a9051d64df00494d18afd379d26669b96309f3f41e89e55b8531d99d67060bf8b262a996dbcdc2cda99adfb6c1c2bd9966630d329b09f9f9aa9fc732a3259
-  languageName: node
-  linkType: hard
-
-"webrtc-adapter@npm:^7.2.1":
-  version: 7.7.1
-  resolution: "webrtc-adapter@npm:7.7.1"
-  dependencies:
-    rtcpeerconnection-shim: ^1.2.15
-    sdp: ^2.12.0
-  checksum: e09a6962ae7e4284ca19da3b8d26224eca5836b78078d118b6ed8624e43b92198dd3decae50e8ce0aa37e5e27e63a14a117a2e95eed66ae4a7107b5bd3f84ab4
   languageName: node
   linkType: hard
 

@@ -8,6 +8,7 @@ import BarcodeScannerComponent from "react-qr-barcode-scanner";
 function App() {
   const [data, setData] = useState();
   const [scannre, setScannre] = useState(true);
+  const [namePer, setName] = useState("");
   function formatAMPM(date) {
     const hours = date.getHours();
     const ampm = hours >= 12 ? "pm" : "am";
@@ -16,23 +17,32 @@ function App() {
   function SendMsg(data) {
     const ampm = formatAMPM(new Date());
     const homeCol = ampm === "am" ? "College" : "Home";
-    axios
-      .post("http://localhost:3001/sms", {
-        phone: db[data][0].phone,
-        message: `${db[data][0].name} is on the way to ${homeCol}.`
-      })
+    if (db[data]) {
+      const phone = db[data][0].phone;
+      const name = db[data][0].name;
+      setName(name + "message send successfully");
+      axios
+        .post("http://localhost:3001/sms", {
+          phone: phone,
+          message: `${name} is on the way to ${homeCol}.`
+        })
 
-      .then(function (response) {
-        setData(undefined);
-        console.log(response);
-      })
-      .catch(function (error) {
-        alert("Student is already pressent in the BUS or NOT FROM COLLEGE BUS");
-        setData(undefined);
-        console.log(error);
-      });
-    console.log(db[data][0].name + " " + db[data][0].phone);
-    // console.log(db);
+        .then(function (response) {
+          setData(undefined);
+          console.log(response);
+        })
+        .catch(function (error) {
+          setData(undefined);
+          setName("");
+          console.log(error);
+          alert("Student is already pressent in the BUS ");
+        });
+      console.log(db[data][0].name + " " + db[data][0].phone);
+    } else {
+      alert("NOT FROM COLLEGE BUS");
+      setName("");
+      setData(undefined);
+    }
   }
 
   useEffect(() => {
@@ -42,12 +52,9 @@ function App() {
   }, [data]);
 
   return (
-    <>
-      <button type="submit" onClick={e => setScannre(!scannre)}>
-        {scannre !== true ? "Scan" : "Stop"}
-      </button>
+    <div className="container">
       {scannre === true ? (
-        <>
+        <div className="qrScanner">
           <BarcodeScannerComponent
             width={500}
             height={500}
@@ -60,11 +67,13 @@ function App() {
             }}
           />
           <p>{data}</p>
-        </>
-      ) : (
-        " "
-      )}
-    </>
+          <p>{namePer}</p>
+        </div>
+      ) : null}
+      <button className="btn" type="submit" onClick={e => setScannre(!scannre)}>
+        {scannre !== true ? "Scan" : "Stop"}
+      </button>
+    </div>
   );
 }
 

@@ -22,11 +22,10 @@ function App() {
       const name = db[data][0].name;
       setName(name + "message send successfully");
       axios
-        .post("http://localhost:3001/sms", {
+        .post("https://cmrcet-bus-app.avinshsharma1.repl.co/sms", {
           phone: phone,
           message: `${name} is on the way to ${homeCol}.`
         })
-
         .then(function (response) {
           setData(undefined);
           console.log(response);
